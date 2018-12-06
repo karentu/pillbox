@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Pill from './Pill.jsx'
 /*
 The list component will take the list of items passed in as a property
 and create an HTML list with those item. In this example, we are passing in the
@@ -13,10 +14,10 @@ In this example, we are changing each item
 (ex. {name: "Apple", type: "Fruit"}) into a HTML list element.
 */
   const items = this.props.items.map(item => {
-    if (item.name == "Apple") {
-      alert('Hey! An Apple!')
-    }
-    return <li key={item.name}>{item.name}</li>
+    // if (item.name == "Apple") {
+    //   alert('Hey! An Apple!')
+    // } <Pill item={item} key={item.name} />
+    return <Pill item={item} key={item.name} />
   });
   return items;
   }

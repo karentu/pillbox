@@ -1,5 +1,16 @@
 [
-  {"name" : 
-
+  {"name" : "Aleve",
+  "trade-name" : "Naproxen",
+   "type" : "OTC",
+   "dosage" : "220 mg",
+   "time" : "6",
+   "usage" : "asneeded"
+ },
+  {"name" : "Desogen",
+  "trade-name" : "Desogestrel",
+   "type" : "Prescription",
+   "dosage" : "1 pill",
+   "time" : "24",
+   "usage" : "ongoing"
   }
 ]
