@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pillbox/static/media/apple.d66f2d94.png"
   },
   {
-    "revision": "22d2955f0991cab4a610cdc9d1f3dc8c",
+    "revision": "e2640ccf42d5bf3f0f2e264d2903a21d",
     "url": "/pillbox/index.html"
   }
 ];
