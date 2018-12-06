@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropdownButton, MenuItem} from 'react-bootstrap';
+import { Button, DropdownButton, MenuItem} from 'react-bootstrap';
 import List from './List';
 
 
@@ -7,17 +7,42 @@ class FilteredList extends Component {
   constructor(props) {
     super(props);
     // The state is just a list of key/value pair (like a hashmap)
+    this.initialState = {
+      search: "",
+      type: "All",
+      status: "All",
+      sort: "Alphabetical"
+    };
     this.state = {
       search: "",
       type: "All",
-      status: "All"
+      status: "All",
+      sort: "Alphabetical"
     };
+  }
+
+  sortBy = (a, b) => {
+    if (this.state.sort === "Time") {
+      return a.time-b.time;
+    } else {
+      return a.name.localeCompare(b.name);
+    }
+  }
+
+  sortSelected = (key, event) => {
+    if (this.state.sort == "Alphabetical") {
+      this.setState({sort: "Time"})
+    } else {
+      this.setState(this.initialState);
+    }
+    console.log(this.state);
   }
 
   // Sets the state whenever the user types on the search bar
   onSearch = (event) => {
     this.setState({search: event.target.value.toLowerCase()});
   }
+
   // Filter the list of displayed medications as user toggles
   filterItem = (item) => {
     console.log(this.state.status);
@@ -54,7 +79,8 @@ class FilteredList extends Component {
             <MenuItem eventKey="ongoing" onSelect={this.selectDropdown}>Active</MenuItem>
             <MenuItem eventKey="asneeded" onSelect={this.selectDropdown}>Past</MenuItem>
         </DropdownButton>
-        <List items={this.props.items.filter(this.filterItem)} />
+        <Button className="button" bsStyle="success" onClick={this.sortSelected}>Sort by Time</Button>
+        <List items={this.props.items.sort(this.sortBy).filter(this.filterItem)} />
       </div>
     );
   }

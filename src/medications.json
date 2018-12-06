@@ -1,18 +1,19 @@
-[
-  {"name" : "Aleve",
-  "trade-name" : "Naproxen",
-   "type" : "OTC",
-   "dosage" : "220 mg",
-   "time" : "1000",
-   "usage" : "asneeded",
-   "description": "something"
- },
-  {"name" : "Desogen",
-  "trade-name" : "Desogestrel",
+[  {"name" : "Desogen",
+  "tradename" : "Desogestrel",
    "type" : "Prescription",
    "dosage" : "1 pill",
    "time" : "1800",
    "usage" : "ongoing",
-   "description": "something"
-  }
+   "img" : "desogen.jpg",
+   "description": "This combination hormone medication is used to prevent pregnancy. It contains 2 hormones: a progestin and an estrogen. It works mainly by preventing the release of an egg (ovulation) during your menstrual cycle. Besides preventing pregnancy, birth control pills may make your periods more regular, decrease blood loss and painful periods, decrease your risk of ovarian cysts, and also treat acne."
+ },
+  {"name" : "Aleve",
+  "tradename" : "Naproxen",
+   "type" : "OTC",
+   "dosage" : "220 mg",
+   "time" : "1900",
+   "usage" : "asneeded",
+   "img" : "aleve.jpg",
+   "description": "Naproxen is used to relieve pain from various conditions such as headache, muscle aches, tendonitis, dental pain, and menstrual cramps. It also reduces pain, swelling, and joint stiffness caused by arthritis, bursitis, and gout attacks. This medication is known as a nonsteroidal anti-inflammatory drug (NSAID). It works by blocking your body's production of certain natural substances that cause inflammation."
+ }
 ]
