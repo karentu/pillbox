@@ -1,14 +1,16 @@
 {
-  "main.css": "/pillbox/static/css/main.0799272a.chunk.css",
-  "main.js": "/pillbox/static/js/main.9a47a164.chunk.js",
-  "main.js.map": "/pillbox/static/js/main.9a47a164.chunk.js.map",
-  "static/js/1.e709920f.chunk.js": "/pillbox/static/js/1.e709920f.chunk.js",
-  "static/js/1.e709920f.chunk.js.map": "/pillbox/static/js/1.e709920f.chunk.js.map",
+  "main.css": "/pillbox/static/css/main.b56355f4.chunk.css",
+  "main.js": "/pillbox/static/js/main.02d79b39.chunk.js",
+  "main.js.map": "/pillbox/static/js/main.02d79b39.chunk.js.map",
+  "static/js/1.8275545a.chunk.js": "/pillbox/static/js/1.8275545a.chunk.js",
+  "static/js/1.8275545a.chunk.js.map": "/pillbox/static/js/1.8275545a.chunk.js.map",
   "runtime~main.js": "/pillbox/static/js/runtime~main.ef6a92b4.js",
   "runtime~main.js.map": "/pillbox/static/js/runtime~main.ef6a92b4.js.map",
+  "static/media/aleve.jpg": "/pillbox/static/media/aleve.f1583a0b.jpg",
   "static/media/apple.png": "/pillbox/static/media/apple.d66f2d94.png",
-  "static/css/main.0799272a.chunk.css.map": "/pillbox/static/css/main.0799272a.chunk.css.map",
+  "static/media/desogen.jpg": "/pillbox/static/media/desogen.5f968532.jpg",
+  "static/css/main.b56355f4.chunk.css.map": "/pillbox/static/css/main.b56355f4.chunk.css.map",
   "index.html": "/pillbox/index.html",
-  "precache-manifest.70835c8e1c07e19813995ecd8a4b97da.js": "/pillbox/precache-manifest.70835c8e1c07e19813995ecd8a4b97da.js",
+  "precache-manifest.fd56155ff497fdb3936e44c08ae5d568.js": "/pillbox/precache-manifest.fd56155ff497fdb3936e44c08ae5d568.js",
   "service-worker.js": "/pillbox/service-worker.js"
 }
