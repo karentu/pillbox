@@ -4,13 +4,15 @@
    "type" : "OTC",
    "dosage" : "220 mg",
    "time" : "6",
-   "usage" : "asneeded"
+   "usage" : "asneeded",
+   "description": "something"
  },
   {"name" : "Desogen",
   "trade-name" : "Desogestrel",
    "type" : "Prescription",
    "dosage" : "1 pill",
    "time" : "24",
-   "usage" : "ongoing"
+   "usage" : "ongoing",
+   "description": "something"
   }
 ]

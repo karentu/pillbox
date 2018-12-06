@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import {Panel, PanelGroup} from 'react-bootstrap';
 
 class Pill extends Component {
   render() {
     return ( <div key={this.props.item.name} className="pill">
-                <div class="card">
-                    <h5 class="card-title">{this.props.item.name}</h5>
-                    <p class="card-text">SOME INFO</p>
-                    <div class="alert alert-success alert-dismissible">
-                      <button type="button" class="close" data-dismiss="alert">×</button>
-                      <strong>Success!</strong> This alert box could indicate a successful or positive action.
-                    </div>
+                <div className="panel">
+                  <Panel id="collapsible-panel-example-2" defaultExpanded>
+                    <Panel.Heading>
+                      <Panel.Title toggle>
+                        {this.props.item.name}
+                      </Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Collapse>
+                      <Panel.Body>
+                       {this.props.item.description}
+                     </Panel.Body>
+                   </Panel.Collapse>
+                 </Panel>
                 </div>
               </div>
       )
