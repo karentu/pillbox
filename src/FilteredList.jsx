@@ -7,12 +7,6 @@ class FilteredList extends Component {
   constructor(props) {
     super(props);
     // The state is just a list of key/value pair (like a hashmap)
-    this.initialState = {
-      search: "",
-      type: "All",
-      status: "All",
-      sort: "Alphabetical"
-    };
     this.state = {
       search: "",
       type: "All",
@@ -30,12 +24,11 @@ class FilteredList extends Component {
   }
 
   sortSelected = (key, event) => {
-    if (this.state.sort == "Alphabetical") {
+    if (this.state.sort === "Alphabetical") {
       this.setState({sort: "Time"})
     } else {
-      this.setState(this.initialState);
+      this.setState({sort: "Alphabetical"});
     }
-    console.log(this.state);
   }
 
   // Sets the state whenever the user types on the search bar
@@ -45,7 +38,6 @@ class FilteredList extends Component {
 
   // Filter the list of displayed medications as user toggles
   filterItem = (item) => {
-    console.log(this.state.status);
       if (item.type === this.state.type || this.state.type === "All") {
         if ((item.usage === this.state.status) || this.state.status === "All") {
           return item.name.toLowerCase().search(this.state.search) !== -1;
@@ -80,7 +72,7 @@ class FilteredList extends Component {
             <MenuItem eventKey="asneeded" onSelect={this.selectDropdown}>Past</MenuItem>
         </DropdownButton>
         <Button className="button" bsStyle="success" onClick={this.sortSelected}>Sort by Time</Button>
-        <List items={this.props.items.sort(this.sortBy).filter(this.filterItem)} />
+      <List items={this.props.items.sort(this.sortBy).filter(this.filterItem)} />
       </div>
     );
   }

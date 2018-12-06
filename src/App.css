@@ -12,6 +12,10 @@
   width: 90%;
 }
 
+.button {
+  margin: 10px;
+}
+
 #pillimage{
   width: 90%;
   max-width: 200px;
@@ -30,6 +34,8 @@
 #searchBar{
   text-align: center;
   margin-top: 3px;
+  border-color: silver;
+  border-radius: 6px;
 }
 
 #typeDropdown {
