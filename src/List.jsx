@@ -14,9 +14,6 @@ In this example, we are changing each item
 (ex. {name: "Apple", type: "Fruit"}) into a HTML list element.
 */
   const items = this.props.items.map(item => {
-    // if (item.name == "Apple") {
-    //   alert('Hey! An Apple!')
-    // } <Pill item={item} key={item.name} />
     return <Pill item={item} key={item.name} />
   });
   return items;
