@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropdownButton, MenuItem, ButtonToolbar, ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
+import { DropdownButton, MenuItem} from 'react-bootstrap';
 import List from './List';
 
 
@@ -18,7 +18,7 @@ class FilteredList extends Component {
   onSearch = (event) => {
     this.setState({search: event.target.value.toLowerCase()});
   }
-
+  // Filter the list of displayed medications as user toggles
   filterItem = (item) => {
     console.log(this.state.status);
       if (item.type === this.state.type || this.state.type === "All") {
@@ -43,8 +43,7 @@ class FilteredList extends Component {
   render() {
     return (
       <div className="filter-list">
-        <h1>Pillbox</h1>
-        <input type="text" placeholder="Search" onChange={this.onSearch} />
+        <input id= "searchBar" type="text" placeholder="Search" onChange={this.onSearch} />
         <DropdownButton id="typeDropdown" title={"Type"}>
             <MenuItem eventKey="All" onSelect={this.selectType}>All</MenuItem>
             <MenuItem eventKey="Prescription" onSelect={this.selectType}>Prescription</MenuItem>

@@ -3,7 +3,7 @@
   "trade-name" : "Naproxen",
    "type" : "OTC",
    "dosage" : "220 mg",
-   "time" : "6",
+   "time" : "1000",
    "usage" : "asneeded",
    "description": "something"
  },
@@ -11,7 +11,7 @@
   "trade-name" : "Desogestrel",
    "type" : "Prescription",
    "dosage" : "1 pill",
-   "time" : "24",
+   "time" : "1800",
    "usage" : "ongoing",
    "description": "something"
   }
