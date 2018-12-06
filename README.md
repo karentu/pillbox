@@ -25,5 +25,9 @@ We also wanted to make considerations for error management and recovery. Since e
 
 Additionally, the blue theming of the website aims to reassure and calm users. Furthermore, the minimalist design and information structure
 
+##Data Structure
+FilteredList filters the items and then passes them to List to be rendered. Each medication is represented as a Pill component and rendered when we map through the data. The items are then passed through props to a PillDescription component that extracts the image and the content of the card in order to display that information. 
+
+
 ## Next Steps
 Ideally, a web app related to medications would be able to take user input or input from other data sources and translate that into a dynamic website that could accomodate other tools such as drug interactions and user input.
